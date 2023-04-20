@@ -1,0 +1,148 @@
+.header {
+    /* position: fixed; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem 2rem;
+}
+
+.header img {
+    width: 150px;
+    transform:translateX(-50px);
+}
+
+.header .menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.header .menu ul {
+    display: flex;
+    gap: 3rem;
+  
+}
+
+.header .menu ul li a {
+    color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.header .menu ul li a::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #C93413;
+    bottom:0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+
+.header .menu ul li a:hover::before {
+   transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* .header .menu ul li a:hover {
+    background-color: #C93413;
+} */
+
+.header .menu-content {
+    background-color:#c93413;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: none;
+}
+
+.header .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 2px;
+    top: 25px;
+    left: 9px;
+    transition: 0.3s ease-in-out;
+}
+
+.header .hamburguer::after,
+.header .hamburguer::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+}
+
+.header .hamburguer::after {
+    top: -10px;
+}
+
+.header .hamburguer::before {
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .header .menu-content {
+        display: block;
+    }
+
+    .header .menu ul {
+        display: none;
+    }
+
+    .header input:checked ~ label .hamburguer {
+        transform: rotate(45deg);
+    }
+
+    .header input:checked ~ label .hamburguer::before {
+        transform: rotate(90deg);
+        top:0
+    }
+
+    .header input:checked ~ label .hamburguer::after {
+        transform: rotate(90deg);
+        top:0
+    }
+
+    .header input:checked ~ ul {
+        display: block;
+    }
+
+     .header nav {
+        position: absolute;
+        flex-direction: column;
+        top: 7px;
+        right: 1px;
+        z-index: 1; 
+        background-color: rgba(0, 0, 0, 0.747);
+        backdrop-filter: blur(20px);
+    }
+
+    .header nav ul li {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .header .menu-content {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .header nav label {
+        display: flex;
+        flex-direction: column;
+    } 
+}

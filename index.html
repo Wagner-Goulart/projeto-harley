@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Harley Davidson</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/hero.css">
+    <link rel="stylesheet" href="src/css/history.css">
+    <link rel="stylesheet" href="src/css/founders.css">
+    <link rel="stylesheet" href="src/css/museum.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="./src/images/logo-harley.png" alt="Logo Harley Davidson">
+        <nav class="menu">
+
+            <input type="checkbox" id="menu-hamburguer">
+            <label for="menu-hamburguer">
+                <div class="menu-content">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul>
+                <li><a href="#history">História</a></li>
+                <li><a href="#founders">Fundadores</a></li>
+                <li><a href="#museum">Museu</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+        </div>
+        <section id="history" class="history">
+            <!-- <h2>História da Marca</h2> -->
+            <div class="container">
+                <img class="old-harley" src="./src/images/old-harley.jpg" alt="Old Harley image">
+                <div class="content">
+                    <p class="text-content history-text">A Harley-Davidson é uma empresa americana fundada em 1903, em Milwaukee,
+                        Wisconsin, pelos amigos William S. Harley e Arthur Davidson. A empresa inicialmente produzia
+                        motocicletas de corrida, mas logo mudou seu foco para produzir motocicletas para uso diário.
+
+                        Ao longo das décadas, a Harley-Davidson se tornou uma das marcas mais icônicas do mundo,
+                        sinônimo de liberdade, aventura e rebeldia. </p>
+                </div>
+            </div>
+        </section>
+        <section id="founders" class="founders">
+            <div class="container">
+                <p class="text-content founders-text">
+                    Os fundadores da Harley-Davidson foram William S. Harley e Arthur Davidson. Harley nasceu em 1876 em
+                    Milwaukee, Wisconsin, e estudou engenharia na Universidade de Wisconsin-Madison. Enquanto trabalhava
+                    em um motor de combustão interna como projeto de graduação, Harley teve a ideia de criar uma
+                    motocicleta.
+
+                    Davidson nasceu em 1881 em Milwaukee, Wisconsin, e cresceu em uma família de fabricantes de
+                    bicicletas. Davidson e seus irmãos eram apaixonados por mecânica e começaram a trabalhar em motores
+                    de combustão interna. Em 1901, Davidson se juntou a Harley para construir uma motocicleta e, no ano
+                    seguinte, eles fundaram a Harley-Davidson.
+
+                    Os primeiros anos da empresa foram dedicados à produção de motocicletas de corrida, e em 1908 eles
+                    começaram a produzir motocicletas para uso diário. Durante a Primeira Guerra Mundial, a
+                    Harley-Davidson forneceu motocicletas para o exército americano e, depois da guerra, a empresa se
+                    concentrou na produção de motocicletas para uso civil.
+                </p>
+                <img class='harley-pilot' src="./src/images/founder.jpg" alt="founders image">
+            </div>
+        </section>
+        <section id="museum" class="museum">
+            <div class="container">
+                <p class="text-content museum-text">O Museu da Harley-Davidson, localizado em Milwaukee, Wisconsin, é um lugar onde
+                    os visitantes podem explorar a história da empresa e ver algumas das motocicletas mais icônicas já
+                    produzidas pela Harley-Davidson. O museu foi inaugurado em 2008 e apresenta uma ampla variedade de
+                    exposições interativas, artefatos históricos, fotografias, vídeos e muito mais.
+
+                    Os visitantes podem ver de perto motocicletas antigas, desde os primeiros modelos da empresa até
+                    motocicletas que foram usadas por celebridades e personalidades históricas, como Elvis Presley e o
+                    presidente dos EUA, Ronald Reagan. Além das motocicletas, o museu também apresenta exposições sobre
+                    a cultura da motocicleta, incluindo roupas e acessórios de pilotagem, música e arte.
+
+                    O museu é considerado um destino imperdível para os fãs da Harley-Davidson e para todos os
+                    interessados ​​na história da indústria de motocicletas. Ele oferece visitas guiadas, palestras e
+                    eventos especiais ao longo do ano, além de uma loja de presentes onde os visitantes podem comprar
+                    lembranças exclusivas da Harley-Davidson.</p>
+            </div>
+                <img class="harley-museum"  src="./src/images/museum.jpg" alt="Imagem fachada Museu da Harley">
+        </section>
+    </main>
+    <footer>
+        <h2 class="follow">Siga a empresa</h2>
+        <div class="social-media">
+            <ul class="social-icons">
+                <li class="media-icon"><a href="https://www.instagram.com/harleydavidsondobrasil/?hl=pt" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+                <li class="media-icon"><a href="https://www.youtube.com/@harleydavidson" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+                <li class="media-icon"><a href="https://www.facebook.com/harleydavidsondobrasil/?locale=pt_BR" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+            </ul>
+        </div>
+        <small>*Site sem fins lucrativos, criado com intuíto educativo para pratica de conceitos de programação*</small>
+    </footer>
+    <script src="src/js/scrollreveal.js"></script>
+</body>
+
+</html>

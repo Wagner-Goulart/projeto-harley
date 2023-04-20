@@ -1,0 +1,18 @@
+.museum {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.museum p {
+    max-width: 75%;
+}
+
+.museum img {
+    max-width: 75%;
+    border-radius: 5px;
+}
+
+
+

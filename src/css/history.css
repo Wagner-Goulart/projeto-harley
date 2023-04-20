@@ -1,0 +1,25 @@
+.history {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    /* visibility: hidden; */
+}
+
+.history h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.container img {
+    /* width: 100%; */
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+        padding: 50px;
+    }
+}
